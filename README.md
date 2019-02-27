@@ -2,6 +2,18 @@
 Example based on the blog post: https://developers.redhat.com/blog/2018/12/21/monitoring-node-js-applications-on-openshift-with-prometheus/
 
 
+## Customize for your app
+
+Change the name of your app (replace all the entries on each file):
+
+. [package.json](https://github.com/helio-frota/express-prometheus-minishift/blob/master/package.json)
+
+. [get-app-url.sh](https://github.com/helio-frota/express-prometheus-minishift/blob/master/get-app-url.sh)
+
+. [prometheus.yml](https://github.com/helio-frota/express-prometheus-minishift/blob/master/prometheus.yml)
+
+. [bench-test.sh](https://github.com/helio-frota/express-prometheus-minishift/blob/master/bench-test.sh)
+
 ## How to setup and run 
 
 1. Clone this repository
@@ -9,6 +21,11 @@ Example based on the blog post: https://developers.redhat.com/blog/2018/12/21/mo
 3. Deploy the app:  `./deploy-app.sh`
 4. Get app URLs: `./get-app-url.sh`
 5. Install prometheus `./install-prometheus.sh`
+6. Run the bench test `./bench-test.sh`
+6. Access prometheus URL: `https://prom-myproject.192.168.99.100.nip.io/`
+7. Execute the PromQL: `my_application:hello_duration_sum / my_application:hello_duration_count`
+
+> The prefix `my_application` is defined inside of the source code [here](https://github.com/helio-frota/express-prometheus-minishift/blob/master/app.js#L13)
 
 ## Versions
 
