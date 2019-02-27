@@ -6,4 +6,7 @@ minishift config set memory 4096
 
 minishift start
 
+minishift addon install --defaults
+minishift addon apply registry-route
+
 # minishift start --show-libmachine-logs -v5
