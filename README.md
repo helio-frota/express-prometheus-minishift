@@ -22,8 +22,8 @@ Change the name of your app (replace all the entries on each file):
 4. Get app URLs: `./get-app-url.sh`
 5. Install prometheus `./install-prometheus.sh`
 6. Run the bench test `./bench-test.sh`
-6. Access prometheus URL: `https://prom-myproject.192.168.99.100.nip.io/`
-7. Execute the PromQL: `my_application:hello_duration_sum / my_application:hello_duration_count`
+7. Access prometheus URL: `https://prom-myproject.192.168.99.100.nip.io/`
+8. Execute the PromQL: `my_application:hello_duration_sum / my_application:hello_duration_count`
 
 > The prefix `my_application` is defined inside of the source code [here](https://github.com/helio-frota/express-prometheus-minishift/blob/master/app.js#L13)
 

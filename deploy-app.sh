@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo 'npm install'
 npm install
+echo 'minishift login'
 oc login -u developer
-npx nodeshift --strictSSL=false --expose
+echo 'nodeshift deploy'
+npx nodeshift --strictSSL=false --expose --imageTag=10.15.1 --build.recreate=true

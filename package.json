@@ -28,6 +28,6 @@
   "dependencies": {
     "express": "^4.16.4",
     "nodemon": "^1.18.10",
-    "prom-client": "^11.2.1"
+    "opossum": "file:../opossum"
   }
 }
