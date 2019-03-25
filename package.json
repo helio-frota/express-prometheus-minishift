@@ -28,6 +28,6 @@
   "dependencies": {
     "express": "^4.16.4",
     "nodemon": "^1.18.10",
-    "opossum": "file:../opossum"
+    "opossum": "1.11.0-canary-1"
   }
 }
