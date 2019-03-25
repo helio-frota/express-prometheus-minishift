@@ -27,6 +27,7 @@
   "homepage": "https://github.com/helio-frota/express-prometheus-minishift#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "kube-probe": "~0.3.2",
     "nodemon": "^1.18.10",
     "opossum": "1.11.0-canary-1"
   }
