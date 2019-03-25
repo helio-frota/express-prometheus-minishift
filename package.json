@@ -2,7 +2,7 @@
   "name": "express-prometheus-minishift",
   "version": "1.0.0",
   "description": "Example based on the blog post: https://developers.redhat.com/blog/2018/12/21/monitoring-node-js-applications-on-openshift-with-prometheus/",
-  "main": "",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
